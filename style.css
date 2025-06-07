@@ -1,0 +1,23 @@
+body{
+      display:grid;
+      place-items:center;
+      min-height:100vh;
+    }
+
+.box {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+      animation: bounce 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) alternate-reverse 9;
+  
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100px);
+  }
+}
+
